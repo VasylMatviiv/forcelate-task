@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "d5420362-73a9-485b-9d64-948e6c6735ea",
+		"name": "TestTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all the users who have an old age",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/users/age?age=55",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"age"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "55"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Article",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n\t\"text\": \"fdhgdf\",\n    \"color\": \"GREEN\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"asdas\",\n\t\"age\":\"34\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " Get all the users who have a green article",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/users/color?color=GREEN",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"color"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "GREEN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all the users who have more than 3 article",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
