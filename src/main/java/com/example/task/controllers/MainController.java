@@ -1,7 +1,7 @@
 package com.example.task.controllers;
 
-import com.example.task.entity.Color;
 import com.example.task.entity.Article;
+import com.example.task.entity.Color;
 import com.example.task.entity.User;
 import com.example.task.services.ArticleService;
 import com.example.task.services.UserService;
