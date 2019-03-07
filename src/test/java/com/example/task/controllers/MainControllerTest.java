@@ -46,7 +46,7 @@ public class MainControllerTest {
 
 
     @Before
-    public void before()  {
+    public void before() {
         reset(userService);
         user = RandomDataUtils.createUser();
         user.setId(5);
